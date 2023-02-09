@@ -1,0 +1,227 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: bash -l
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /home/rmnobarra/workspace/dev/pokeapi
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 127
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 30
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 329
+    content: "\e]0;rmnobarra@ZUP-003118:~/workspace/dev/pokeapi\e\\\e]7;file://ZUP-003118/home/rmnobarra/workspace/dev/pokeapi\e\\rmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 1471
+    content: "\e[H\e[2Jrmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 3647
+    content: python3 pokeapi.py
+  - delay: 377
+    content: "\r\n"
+  - delay: 159
+    content: >-
+      Informe o nome do Pokemon (ou deixe em branco para obter uma lista com 10
+      Pokemons): 
+  - delay: 2657
+    content: "\r\n"
+  - delay: 443
+    content: "Dados sobre os 10 primeiros Pokemons na lista foi salvo no arquivo pokemons_info.csv\r\n"
+  - delay: 13
+    content: "\e]0;rmnobarra@ZUP-003118:~/workspace/dev/pokeapi\e\\\e]7;file://ZUP-003118/home/rmnobarra/workspace/dev/pokeapi\e\\rmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 4214
+    content: "\e[H\e[2Jrmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 337
+    content: c
+  - delay: 80
+    content: a
+  - delay: 128
+    content: t
+  - delay: 78
+    content: ' '
+  - delay: 236
+    content: pokemons_info.csv
+  - delay: 533
+    content: "\r\nName,Ability,Type\r\r\ncharmander,blaze,fire\r\r\ncharmeleon,blaze,fire\r\r\ncharizard,blaze,fire\r\r\nbulbasaur,overgrow,grass\r\r\nivysaur,overgrow,grass\r\r\nvenusaur,overgrow,grass\r\r\ncaterpie,shield-dust,bug\r\r\nsquirtle,torrent,water\r\r\nwartortle,torrent,water\r\r\nblastoise,torrent,water\r\r\n\e]0;rmnobarra@ZUP-003118:~/workspace/dev/pokeapi\e\\\e]7;file://ZUP-003118/home/rmnobarra/workspace/dev/pokeapi\e\\rmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 2106
+    content: "\e[H\e[2Jrmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 608
+    content: cat pokemons_info.csv
+  - delay: 248
+    content: "\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\b\e[3Ppython3 pokeapi.py"
+  - delay: 903
+    content: "\r\n"
+  - delay: 117
+    content: >-
+      Informe o nome do Pokemon (ou deixe em branco para obter uma lista com 10
+      Pokemons): 
+  - delay: 1659
+    content: m
+  - delay: 55
+    content: a
+  - delay: 96
+    content: s
+  - delay: 447
+    content: q
+  - delay: 89
+    content: u
+  - delay: 120
+    content: e
+  - delay: 240
+    content: i
+  - delay: 200
+    content: c
+  - delay: 96
+    content: o
+  - delay: 648
+    content: "\r\n"
+  - delay: 39
+    content: "Pokemon masqueico não foi encontrado\r\n"
+  - delay: 12
+    content: "\e]0;rmnobarra@ZUP-003118:~/workspace/dev/pokeapi\e\\\e]7;file://ZUP-003118/home/rmnobarra/workspace/dev/pokeapi\e\\rmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 2220
+    content: "\e[H\e[2Jrmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 585
+    content: python3 pokeapi.py
+  - delay: 623
+    content: "\r\n"
+  - delay: 113
+    content: >-
+      Informe o nome do Pokemon (ou deixe em branco para obter uma lista com 10
+      Pokemons): 
+  - delay: 879
+    content: p
+  - delay: 191
+    content: i
+  - delay: 152
+    content: k
+  - delay: 144
+    content: a
+  - delay: 344
+    content: c
+  - delay: 127
+    content: h
+  - delay: 105
+    content: u
+  - delay: 912
+    content: "\r\n"
+  - delay: 62
+    content: "Dados sobre o Pokemon pikachu foi salvo no arquivo pokemon_info.csv\r\n"
+  - delay: 20
+    content: "\e]0;rmnobarra@ZUP-003118:~/workspace/dev/pokeapi\e\\\e]7;file://ZUP-003118/home/rmnobarra/workspace/dev/pokeapi\e\\rmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 2510
+    content: "\e[H\e[2Jrmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 263
+    content: c
+  - delay: 96
+    content: a
+  - delay: 129
+    content: t
+  - delay: 88
+    content: ' '
+  - delay: 272
+    content: pokemon_info.csv
+  - delay: 526
+    content: "\r\nName,Ability,Type\r\r\npikachu,static,electric\r\r\n\e]0;rmnobarra@ZUP-003118:~/workspace/dev/pokeapi\e\\\e]7;file://ZUP-003118/home/rmnobarra/workspace/dev/pokeapi\e\\rmnobarra@ZUP-003118:~/workspace/dev/pokeapi$ "
+  - delay: 1576
+    content: "sair\r\n"
